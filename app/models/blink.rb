@@ -9,7 +9,7 @@ class Blink < ActiveRecord::Base
     target_pin  = PiPiper::Pin.new(:pin => pin, :direction => :out)
     puts "blink_count => #{blink_count}"
     (1..blink_count).each do |n|
-      puts "n => #{m}"
+      puts "n => #{n}"
       if n.odd?
         target_pin.on
       else
