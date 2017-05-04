@@ -7,7 +7,9 @@ class Blink < ActiveRecord::Base
     rate        = settings[:blink][:rate].to_f
     blink_count = settings[:blink][:total_blinks].to_i
     target_pin  = PiPiper::Pin.new(:pin => pin, :direction => :out)
+    puts "blink_count => #{blink_count}"
     (1..blink_count).each do |n|
+      puts "n => #{m}"
       if n.odd?
         target_pin.on
       else
