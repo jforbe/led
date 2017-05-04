@@ -5,7 +5,7 @@ class Blink < ActiveRecord::Base
   def self.make_it_blink(settings)
     pin         = settings[:blink][:gpio].to_i
     rate        = settings[:blink][:rate].to_f
-    blink_count = settings[:blink][:total_blinks].to_i
+    blink_count = settings[:blink][:total_blinks].to_i * 2
     target_pin  = PiPiper::Pin.new(:pin => pin, :direction => :out)
     puts "blink_count => #{blink_count}"
     (1..blink_count).each do |n|
