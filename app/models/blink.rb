@@ -15,5 +15,6 @@ class Blink < ActiveRecord::Base
       end
       sleep rate unless n == blink_count
     end
+    File.open("/sys/class/gpio/unexport","w") { |f| f.write(pin) }
   end
 end
