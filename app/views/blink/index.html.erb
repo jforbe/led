@@ -1,0 +1,101 @@
+<div class="row">
+  <div class="col-md-10">
+    <h1 id="blinker">Make the LED Blink</h1>
+  </div>
+</div>
+
+
+<%= form_for :blink do |f|  %>
+    <div class="row">
+      <div class="col-md-10">
+        <h3>Select the connected GPIO Pin</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10">
+        <%= f.radio_button :gpio, "4",  checked: false, class: 'GPIO-pins', data: { question: 'GPIO 4 '  } %>
+        <%= f.label :gpio, "4", value: '4', class: 'GPIO-pins' %>
+        <br/>
+        <%= f.radio_button :gpio, "17", checked: false, class: 'GPIO-pins', data: { question: 'GPIO 17 ' } %>
+        <%= f.label :gpio, "17", value: '17', class: 'GPIO-pins' %>
+        <br/>
+        <%= f.radio_button :gpio, "18", checked: false, class: 'GPIO-pins', data: { question: 'GPIO 18 ' } %>
+        <%= f.label :gpio, "18", value: '18', class: 'GPIO-pins' %>
+        <br/>
+        <%= f.radio_button :gpio, "21", checked: false, class: 'GPIO-pins', data: { question: 'GPIO 21 ' } %>
+        <%= f.label :gpio, "21", value: '21', class: 'GPIO-pins' %>
+        <br/>
+        <%= f.radio_button :gpio, "22", checked: false, class: 'GPIO-pins', data: { question: 'GPIO 22 ' } %>
+        <%= f.label :gpio, "22", value: '22', class: 'GPIO-pins' %>
+        <br/>
+        <%= f.radio_button :gpio, "23", checked: false, class: 'GPIO-pins', data: { question: 'GPIO 23 ' } %>
+        <%= f.label :gpio, "23", value: '23', class: 'GPIO-pins' %>
+        <br/>
+        <%= f.radio_button :gpio, "24", checked: false, class: 'GPIO-pins', data: { question: 'GPIO 24 ' } %>
+        <%= f.label :gpio, "24", value: '24', class: 'GPIO-pins' %>
+        <br/>
+        <%= f.radio_button :gpio, "25", checked: false, class: 'GPIO-pins', data: { question: 'GPIO 25 ' } %>
+        <%= f.label :gpio, "25", value: '25', class: 'GPIO-pins' %>
+        <br/>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10">
+        <h3>Set the blink rate</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10">
+        <%= f.radio_button :rate, "1.0",  checked: false, class: 'blink-rate', data: { question: 'rate 1 '  }   %>
+        <%= f.label :rate, "One Second", value: '1.0', class: 'blink-rate' %>
+        <br/>
+        <%= f.radio_button :rate, "0.5",  checked: false, class: 'blink-rate', data: { question: 'rate 0.5 ' }  %>
+        <%= f.label :rate, "One Half Second", value: '0.5', class: 'blink-rate' %>
+        <br/>
+        <%= f.radio_button :rate, "0.25", checked: false, class: 'blink-rate', data: { question: 'rate 0.25 ' } %>
+        <%= f.label :rate, "One Quarter Second", value: '0.25', class: 'blink-rate' %>
+        <br/>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10">
+        <h3>Set the number of blinks</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10">
+        <%= f.radio_button :total_blinks, "10",  checked: false, class: 'total-blinks', data: { question: 'blinks 10'}   %>
+        <%= f.label :total_blinks, "10", value:   '10', class: 'total-blinks' %>
+        <br/>
+        <%= f.radio_button :total_blinks, "50",  checked: false, class: 'total-blinks', data: { question: 'blinks 50' }  %>
+        <%= f.label :total_blinks, "50",  value:  '50',   class: 'total-blinks' %>
+        <br/>
+        <%= f.radio_button :total_blinks, "100", checked: false, class: 'total-blinks', data: { question: 'blinks 100' } %>
+        <%= f.label :total_blinks, "100", value: '100',  class: 'total-blinks' %>
+        <br/>
+      </div>
+    </div>
+
+    <div class="row">
+      <br/>
+      <div class="col-md-10">
+        <%= f.submit "Blink LED", id: 'blink-led' %>
+      </div>
+    </div>
+
+<% end %>
+
+<script  type="text/javascript">
+  $(function() {
+    var submitController;
+    if ($('#blinker').length > 0) {
+      submitController = new SubmitController();
+      $('#blink-led').prop("disabled", true);
+      return $('#blink-led').css('opacity', '0.5');
+    }
+  });
+</script>

@@ -1,0 +1,19 @@
+class Blink < ActiveRecord::Base
+  require 'pi_piper'
+  include PiPiper
+
+  def self.make_it_blink(settings)
+    pin         = settings[:blink][:gpio].to_i
+    rate        = settings[:blink][:rate].to_f
+    blink_count = settings[:blink][:total_blinks].to_i
+    target_pin  = PiPiper::Pin.new(:pin => pin, :direction => :out)
+    (1..blink_count).each do |n|
+      if n.odd?
+        target_pin.on
+      else
+        target_pin.off
+      end
+      sleep rate unless n == blink_count
+    end
+  end
+end
