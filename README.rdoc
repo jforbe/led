@@ -1,28 +1,21 @@
-== README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+sudo apt-get install -y git curl zlib1g-dev subversion
 
-Things you may want to cover:
+gpg2 --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+sudo \curl -sSL https://get.rvm.io | bash -s stable
+source /home/pi/.rvm/scripts/rvm
+rvm requirements
+rvm install 2.1.0
+ruby -v
 
-* Ruby version
+sudo gem install rails -v 4.2.6
+sudo rails -v
 
-* System dependencies
+gem install bundler
 
-* Configuration
+mkdir ~/Sites
+cd ~/Sites/
+git clone https://github.com/jforbe/led.git
+cd led
+bundle install
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
