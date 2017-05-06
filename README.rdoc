@@ -17,6 +17,4 @@ mkdir ~/Sites
 cd ~/Sites/
 git clone https://github.com/jforbe/led.git
 cd led
-gem bundle install
 bundle install
-
