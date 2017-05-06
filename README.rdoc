@@ -2,19 +2,31 @@
 sudo apt-get install -y git curl zlib1g-dev subversion
 
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+
 \curl -sSL https://get.rvm.io | bash -s stable
+
 source /home/pi/.rvm/scripts/rvm
+
 rvm requirements
+
 rvm install 2.2.7
+
 ruby -v
 
 sudo apt-get install ruby-dev
 
 sudo gem install rails -v 4.2.6
+
 sudo rails -v
 
 mkdir ~/Sites
+
 cd ~/Sites/
+
 git clone https://github.com/jforbe/led.git
+
 cd led
+
 bundle install
+
+rails s
