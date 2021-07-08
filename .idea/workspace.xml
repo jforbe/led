@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8471e778-5f17-4d1f-8dc5-c58977475a70" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Capfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/deploy.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/deploy/production.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/deploy/staging.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/led.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/led.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/blink_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/blink_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/static_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/static_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/blink.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/blink.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/static/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/static/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,11 +108,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v4.4.4/bin/node" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/John_Forbes_Spencer/stock-quest-seed" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/John_Forbes_Spencer/stock-quest-data-loader" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -305,6 +313,12 @@
       <workItem from="1561271612154" duration="687000" />
       <workItem from="1619296368350" duration="1070000" />
       <workItem from="1619297810014" duration="161000" />
+      <workItem from="1619319523432" duration="3357000" />
+      <workItem from="1619537063086" duration="1537000" />
+      <workItem from="1619553354530" duration="1253000" />
+      <workItem from="1625679012795" duration="610000" />
+      <workItem from="1625704020004" duration="620000" />
+      <workItem from="1625779320722" duration="1299000" />
     </task>
     <servers />
   </component>
@@ -337,6 +351,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
@@ -344,6 +369,9 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/views/static/index.html.erb">
