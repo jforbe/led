@@ -27,6 +27,7 @@ gem "bootstrap-sass", ">= 3.4.1"
 
 gem 'pi_piper'
 
+gem 'unicorn'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
